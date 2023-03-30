@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ArmbandAi</string>
+    <string name="username_hint">输入用户名</string>
+    <string name="password_hint">输入密码</string>
+    <string name="login_button_text">登录</string>
+    <string name="navigation_home">首页</string>
+    <string name="navigation_profile">我的</string>
+    <string name="navigation_notifications">通知</string>
+    <string name="navigation_dashboard">列表</string>
+    <string name="home_title">Home</string>
 </resources>
