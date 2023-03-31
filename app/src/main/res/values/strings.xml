@@ -8,4 +8,6 @@
     <string name="navigation_notifications">通知</string>
     <string name="navigation_dashboard">列表</string>
     <string name="home_title">Home</string>
+    <string name="relationship_prompt">就诊人关系</string>
+    <string name="disease_prompt">患病类型</string>
 </resources>

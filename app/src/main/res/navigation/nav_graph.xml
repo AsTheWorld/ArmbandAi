@@ -6,13 +6,13 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.zoneyet.armbandai.fragment.HomeFragment"
+        android:name="com.zoneyet.armbandai.fragment.home.HomeFragment"
         android:label="@string/navigation_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.zoneyet.armbandai.fragment.DashboardFragment"
+        android:name="com.zoneyet.armbandai.fragment.patient.PatientListFragment"
         android:label="@string/navigation_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 

@@ -1,6 +1,7 @@
 package com.zoneyet.armbandai.login
 
 import androidx.lifecycle.MutableLiveData
+import com.zoneyet.armbandai.MyApp
 import com.zoneyet.armbandai.base.ApiService
 import com.zoneyet.armbandai.base.BaseViewModel
 import com.zoneyet.armbandai.base.LoginResult
@@ -28,6 +29,9 @@ class LoginViewModel : BaseViewModel() {
 
                 override fun onNext(loginResponse: LoginResponse) {
                     if (loginResponse.code == 200 && loginResponse.status == 0) {
+                        loginResponse.data.token?.let { token ->
+                            MyApp.instance.setToken(token)
+                        }
                         loginResult.value = LoginResult.Success
                     } else {
                         loginResult.value = LoginResult.Failure("登录失败")

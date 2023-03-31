@@ -25,6 +25,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>() {
         viewModel.loginResult.observe(this, Observer { result ->
             when (result) {
                 is LoginResult.Success -> {
+                    // 处理登录成功
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()

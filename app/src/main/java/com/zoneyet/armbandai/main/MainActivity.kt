@@ -52,6 +52,8 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainViewModel>() {
                 currentFragment = fragment
             }
         }
+        viewModel.getDefHospitalId()
+
     }
 
     override fun observeLiveData() {
